@@ -35,7 +35,7 @@ echo From Comfy github page: "Python 3.13 is supported but using 3.12 is recomme
 echo.
 
 @REM Step 1: Locate Python installations
-set "PYTHON_DIR=C:\Users\%USERNAME%\AppData\Local\Programs\Python"
+set "PYTHON_DIR=%LOCALAPPDATA%\Programs\Python"
 if not exist "%PYTHON_DIR%" (
     echo No Python installations found in %PYTHON_DIR%.
     exit /b
