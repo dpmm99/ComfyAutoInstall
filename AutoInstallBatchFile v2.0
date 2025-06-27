@@ -73,7 +73,7 @@ set VENV_NAME=venv
 
 
 echo Creating virtual environment "%VENV_NAME%" using %SELECTED_PYTHON%...
-%SELECTED_PYTHON% -m venv %VENV_NAME%
+"%SELECTED_PYTHON%" -m venv %VENV_NAME%
 
 if not exist "%VENV_NAME%" (
     echo Failed to create virtual environment.
