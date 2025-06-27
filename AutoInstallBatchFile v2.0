@@ -314,11 +314,11 @@ if "%CHOICE%"=="3" (
 
 @REM Step 11: Validate and download the selected wheel
 if "%WHEEL_URL%"=="" (
-    echo No compatible wheel found for Python %PYTHON_MAJOR%.%PYTHON_MINOR% or invalid choice.
+    echo No compatible wheel found for Python !py_major_version!.!py_minor_version! or invalid choice.
     exit /b
 )
 
-echo Installing Triton package for Python %PYTHON_MAJOR%.%PYTHON_MINOR%...
+echo Installing Triton package for Python !py_major_version!.!py_minor_version!...
 pip install %WHEEL_URL%
 
 @REM Step 12: Deleting Tritons cached files as these can make it fault
